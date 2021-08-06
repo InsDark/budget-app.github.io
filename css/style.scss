@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #333333;
+    justify-content: space-around;
+}
+
+.app{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 1rem;
+    form{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 1rem;
+        margin-top: 1rem;
+        border-radius: .5rem;
+        label{
+            font-size: 1.3rem;
+        
+        }
+    }
+    #getBudget{
+        color: black;
+        border: 2px solid green;
+        input{
+            border: 1px solid  green;
+            padding: .5rem 1rem;
+            outline: none;
+            margin-top: 1rem;
+            border-radius: 5px;
+        }
+        button{
+            width: 7rem;
+            border: 1px solid green;
+            background-color: white;
+            border-radius: .5rem;
+            color: green;
+            margin-top: 1rem;
+            padding: .5rem 1rem;
+            cursor: pointer;
+            &:hover{
+                color: white;
+                background-color: green;
+            }
+        }
+    }
+    #getExpense{
+        color: black;
+        border: 2px solid red;
+        gap: 1rem;
+        div{
+            input{
+                border: 1px solid  red;
+                padding: .5rem 1rem;
+                width: 100%;
+                outline: none;
+                margin-top: 1rem;
+            }
+        }
+        button{
+            width: 8rem;
+            border: 1px solid red;
+            background-color: white;
+            border-radius: .5rem;
+            padding: .5rem 1rem;
+            color: red;
+            cursor: pointer;
+            margin-top: 1rem;
+            &:hover{
+                color: white;
+                background-color: red;
+            }
+        }
+    }
+}
+
+#budgetDetails{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin: 1rem 0 2rem 0;
+    justify-content: space-around;
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        h2{
+            font-size: 1.5rem;
+        }
+        i{
+            font-size: 3rem;
+            color: #05668D;
+        }
+        h3{
+            font-size: 3rem;
+        }
+        p{
+            font-size: 1.2rem;
+        }
+        .changes{
+            display: inline-block;
+            i{
+                font-size: 1rem;
+                margin: 0 1rem;
+                cursor: pointer;
+                &:last-child{
+                    color: red;
+                }
+                &:invalid{
+                    background-color: black;
+                }
+            }
+        }
+    }
+}

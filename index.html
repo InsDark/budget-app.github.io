@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b8ffa0db99.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Budget App</title>
+</head>
+<body>
+    <div class="app">
+        <h1>BUDGET APP</h1>
+        <form id='getBudget'>
+            <label>Please enter your budget</label>
+            <input class='budget'  required type="number">
+            <button>Calculate</button>
+        </form>
+        <form id="getExpense">
+            <div>
+                <label>Please Enter Your Expense Title</label>
+                <input class="expense" required type="text">
+            </div>
+            <div>
+                <label>Please Enter Expense Amount</label>
+                <input class='expenseAmount' required type="number">
+            </div>
+            <button>Add Expense</button>
+        </form>
+    </div>
+    <div id="budgetDetails">
+        <div id="budget">
+            <h2>BUDGET</h2>
+            <i class="fa fa-money-bill-alt"></i>
+            <h3 class='currentBudget'>$ 0</h3>
+            <p>Expense Title</p>
+            <span>- Expense Title</span>
+        </div>
+        <div id="expense">
+            <h2>EXPENSES</h2>
+            <i class="fa fa-credit-card"></i>
+            <h3>$ 0</h3>
+            <p>Expense Value</p>
+            <span>$12</span>
+        </div>
+        <div id="balance">
+            <h2>BALANCE</h2>
+            <i class="fa fa-dollar-sign"></i>
+            <h3>$ 0</h3>
+            <p>Valance Value</p>
+            <div class="changes">
+                <i class='fa fa-edit'></i>
+                <i class='fas fa-trash'></i>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
