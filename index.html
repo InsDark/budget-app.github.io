@@ -13,44 +13,49 @@
         <h1>BUDGET APP</h1>
         <form id='getBudget'>
             <label>Please enter your budget</label>
-            <input class='budget'  required type="number">
+            <input class='budget'  required type="number" min="0">
             <button>Calculate</button>
         </form>
         <form id="getExpense">
             <div>
                 <label>Please Enter Your Expense Title</label>
-                <input class="expense" required type="text">
+                <input class="expenseTitle" required type="text">
             </div>
             <div>
                 <label>Please Enter Expense Amount</label>
-                <input class='expenseAmount' required type="number">
+                <input class='expenseAmount' required type="number" min="0" step="0.01">
             </div>
             <button>Add Expense</button>
         </form>
     </div>
     <div id="budgetDetails">
-        <div id="budget">
-            <h2>BUDGET</h2>
-            <i class="fa fa-money-bill-alt"></i>
-            <h3 class='currentBudget'>$ 0</h3>
-            <p>Expense Title</p>
-            <span>- Expense Title</span>
+        <div class="details">
+            <div id="budget">
+                <h2>BUDGET</h2>
+                <i class="fa fa-money-bill-alt"></i>
+                <h3 class='currentBudget'>$ 0</h3>
+            </div>
+            <div id="expense">
+                <h2>EXPENSES</h2>
+                <i class="fa fa-credit-card"></i>
+                <h3 class="currentExpenseAmount">$ 0</h3>
+            </div>
+            <div id="balance">
+                <h2>BALANCE</h2>
+                <i class="fa fa-dollar-sign"></i>
+                <h3 class="currentBalance">$ 0</h3>
+            </div>
         </div>
-        <div id="expense">
-            <h2>EXPENSES</h2>
-            <i class="fa fa-credit-card"></i>
-            <h3>$ 0</h3>
-            <p>Expense Value</p>
-            <span>$12</span>
-        </div>
-        <div id="balance">
-            <h2>BALANCE</h2>
-            <i class="fa fa-dollar-sign"></i>
-            <h3>$ 0</h3>
-            <p>Valance Value</p>
-            <div class="changes">
-                <i class='fa fa-edit'></i>
-                <i class='fas fa-trash'></i>
+        <div class="expenseDetails">
+            <h4>Expense Title</h4>
+            <h4>Expense Value</h4>
+            <div class="newExpense">
+                <h5>Milk</h5>
+                <p>$12</p>
+                <div>
+                    <i class='fa fa-edit'></i>
+                    <i class='fas fa-trash del' id="del"></i>
+                </div>
             </div>
         </div>
     </div>
